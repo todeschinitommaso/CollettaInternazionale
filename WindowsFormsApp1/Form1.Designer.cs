@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.NEGROOOOO = new System.Windows.Forms.Button();
+            this.add = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -60,15 +60,15 @@
             this.textBox1.Size = new System.Drawing.Size(148, 20);
             this.textBox1.TabIndex = 0;
             // 
-            // NEGROOOOO
+            // add
             // 
-            this.NEGROOOOO.Location = new System.Drawing.Point(15, 104);
-            this.NEGROOOOO.Name = "NEGROOOOO";
-            this.NEGROOOOO.Size = new System.Drawing.Size(75, 23);
-            this.NEGROOOOO.TabIndex = 1;
-            this.NEGROOOOO.Text = "aggiungi";
-            this.NEGROOOOO.UseVisualStyleBackColor = true;
-            this.NEGROOOOO.Click += new System.EventHandler(this.NEGROOOOO_Click);
+            this.add.Location = new System.Drawing.Point(15, 104);
+            this.add.Name = "add";
+            this.add.Size = new System.Drawing.Size(75, 23);
+            this.add.TabIndex = 1;
+            this.add.Text = "aggiungi";
+            this.add.UseVisualStyleBackColor = true;
+            this.add.Click += new System.EventHandler(this.add_Click);
             // 
             // textBox2
             // 
@@ -263,7 +263,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.NEGROOOOO);
+            this.Controls.Add(this.add);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -276,7 +276,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button NEGROOOOO;
+        private System.Windows.Forms.Button add;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader1;

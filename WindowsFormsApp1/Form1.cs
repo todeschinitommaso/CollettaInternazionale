@@ -28,22 +28,6 @@ namespace WindowsFormsApp1
             
         }
 
-        private void NEGROOOOO_Click(object sender, EventArgs e)
-
-        {
-            Partecipane b1 = new Partecipane(textBox1.Text);
-            Importo b2 = new Importo(Convert.ToInt16(textBox2.Text));
-
-            accounts.Add(b1, b2);
-
-            quota = quota + Convert.ToInt16( textBox2.Text);
-            label5.Text = quota.ToString();
-            string[] row = { textBox2.Text, textBox1.Text, textBox9.Text};
-
-            var ListViewItem = new ListViewItem(row);
-            listView1.Items.Add(ListViewItem);
-        }
-
         private void del_Click(object sender, EventArgs e)
         {
            // accounts.Remove(del.Text);
@@ -69,6 +53,21 @@ namespace WindowsFormsApp1
         private void textBox9_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void add_Click(object sender, EventArgs e)
+        {
+            Partecipane b1 = new Partecipane(textBox1.Text);
+            Importo b2 = new Importo(Convert.ToInt16(textBox2.Text));
+
+            accounts.Add(b1, b2);
+
+            quota = quota + Convert.ToInt16(textBox2.Text);
+            label5.Text = quota.ToString();
+            string[] row = { textBox2.Text, textBox1.Text, textBox9.Text };
+
+            var ListViewItem = new ListViewItem(row);
+            listView1.Items.Add(ListViewItem);
         }
     }
 }
